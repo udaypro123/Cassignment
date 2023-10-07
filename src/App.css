@@ -1,38 +1,689 @@
 .App {
-  text-align: center;
+  width: 100vw;
+  background-color: rgb(225, 225, 255);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*----------- header section -------------*/
+.headercontainer {
+  height: 50rem;
+  width: 100vw;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.headerSubconatiner {
+  height: 80%;
+  background-image: url('../public/images/Background-Image.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.headbodyConatiner {
+  height: 90%;
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+}
+
+.headleftsection {
+  height: 70%;
+  width: 30%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.headleftsection button {
+  height: 10%;
+  width: 30%;
+  border: none;
+  background-color: white;
+  color: rgb(252, 52, 86);
+  margin-left: 2rem;
+  border-radius: .3rem;
+}
+
+.headleftsectionspan1 {
+  font-size: 3.5rem;
+  margin-left: 2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.headleftsectionspan2 {
+  margin-left: 2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.headRightsection {
+  height: 90%;
+  width: 50%;
+}
+
+.headRightsection img {
+  height: 80%;
+  width: 100%;
+  opacity: .8;
+}
+
+
+
+
+
+/** ----------navbar ----------*/
+.navbar {
+  height: 10%;
+  width: 100%;
+  display: flex;
+}
+
+.navbarleftsection {
+  height: 100%;
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navbarleftsection img {
+  height: 60%;
+  width: 25%;
+  margin-right: 2rem;
+}
+
+.navbarrightsection {
+  height: 100%;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbarrightsection a {
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.2rem;
+  padding: 0rem 2rem;
+  color: white;
+}
+
+.navbarrightsection img {
+  margin-right: .5rem;
+
+}
+
+
+.menu-icon {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  margin-left: 2rem;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #d9d7d7;
+  margin: 3px 0;
+}
+
+.menu-icon {
+  display: none;
+}
+
+
+
+/*------------------- card -----------*/
+.container {
+  margin-top: 5rem;
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardsection {
+  height: auto;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  height: 14rem;
+  width: 25%;
+  box-shadow: 0px 0px 1px black;
+  background-color: white;
+  margin: 1rem;
+  border-radius: .3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.headingspan {
+  font-size: 1.5rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+  text-align: center;
+}
+
+.quotespara {
+  height: auto;
+  width: 60%;
+  padding: 2rem 3rem;
+  color: grey;
+  text-align: center;
+}
+
+.cardheadingspan {
+  font-size: 1.2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+  text-align: center;
+}
+
+.cardquotespara {
+  padding: 1rem 1rem;
+  color: grey;
+  text-align: center;
+}
+
+.card img {
+  height: 30%;
+  width: 25%;
+}
+
+
+.footer {
+  height: 4rem;
+  width: 100%;
+  background-color: rgb(241, 184, 113);
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer span {
+  margin: auto;
+}
+
+.navbarrightsection .active {
+  color: rgb(255, 141, 160);
+}
+
+
+
+/*--------------------Homepage ----------*/
+
+.homecontainer {
+  background-color: rgb(197, 212, 224);
+}
+
+.loginsection {
+  height: 40rem;
+  width: 80%;
+  margin: auto;
+  display: flex;
+}
+
+.loginleftsection {
+  height: 100%;
+  width: 60%;
+
+}
+
+.loginleftsection img {
+  height: 90%;
+  width: 90%;
+}
+
+
+.loginrightsection {
+  height: 70%;
+  width: 30%;
+  border-radius: .5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0px 0px 2px black;
+}
+
+.loginrightsection form {
+  width: 90%;
+  margin-left: 4rem;
+}
+
+.loginrightsection form input {
+  margin: .5rem;
+  height: 2rem;
+  width: 80%;
+  border-radius: .5rem;
+  outline: none;
+  border: 1px solid black;
+  padding-left: 1rem;
+}
+
+
+.loginrightsection button {
+  height: 2rem;
+  width: 50%;
+  margin-top: .5rem;
+  background-color: rgb(131, 3, 250);
+  color: rgb(254, 254, 255);
+  border-radius: .5rem;
+  font-size: 1.2rem;
+  outline: none;
+  border: none;
+}
+
+.loginrightsection p {
+  font-size: 1.2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+  text-align: center;
+}
+
+/*------------solution section -----------------*/
+.solutionsection {
+  height: auto;
+  width: 100%;
+}
+
+
+.homecard {
+  height: 14rem;
+  width: 25%;
+  margin: 1rem;
+  border-radius: .3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.homecard img {
+  height: 30%;
+  width: 25%;
+}
+
+.digitalsolution {
+  height: 20rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgb(249, 83, 111);
+}
+
+.digitalsolution button {
+  height: 12%;
+  width: 15%;
+  border: none;
+  outline: none;
+  background-color: rgb(247, 243, 244);
+}
+
+.videoicon {
+  height: 40%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+
+.videoicon h2 {
+  padding: 1rem 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.videoicon p {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+@media screen and (max-width: 600px) and (min-width: 300px) {
+  .headbodyConatiner {
+    display: flex;
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+
+  .headleftsection {
+    height: 50%;
+    width: 100%;
   }
+
+  .headRightsection {
+    height: 50%;
+    width: 100%;
+  }
+
+  .headleftsectionspan1 {
+    font-size: 2rem;
+  }
+
+  .quotespara {
+    width: 90%;
+    padding: 1rem 1rem;
+  }
+
+  .card {
+    width: 90%
+  }
+
+  .cardsection {
+    width: 100%
+  }
+
+  .menu-icon {
+    display: block;
+    margin-top: 1rem;
+  }
+
+  .navbarrightsection {
+    display: none;
+  }
+
+  .navbarleftsection {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbarleftsection img {
+    width: 32%;
+  }
+
+  .navbarrightsectionshow {
+    height: 70%;
+    position: absolute;
+    top: 3rem;
+    left: 1rem;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgb(212, 58, 255);
+    border-radius: .5rem;
+    z-index: 1;
+  }
+
+  .navbarrightsectionshow a {
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2rem;
+    padding: 0rem 2rem;
+    color: white;
+  }
+
+  .navbarrightsectionshow img {
+    margin-right: .5rem;
+
+  }
+
+  .loginsection {
+    height: 50rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .loginleftsection {
+    height: 50%;
+    width: 90%;
+  }
+
+  .loginrightsection {
+    width: 90%;
+  }
+
+  .cardsection {
+    flex-direction: column;
+  }
+
+  .homecard {
+    width: 90%;
+  }
+
+  .digitalsolution {
+    height: 35rem;
+  }
+
+  .videoicon {
+    width: 90%;
+    text-align: center;
+  }
+
+  .digitalsolution button {
+    height: 6%;
+    width: 48%;
+  }
+
+
+}
+
+@media screen and (max-width: 800px) and (min-width: 600px) {
+  .headbodyConatiner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .headleftsection {
+    height: 50%;
+    width: 100%;
+  }
+
+  .headRightsection {
+    height: 50%;
+    width: 80%;
+  }
+
+  .headleftsectionspan1 {
+    font-size: 2rem;
+  }
+
+  .quotespara {
+    width: 90%;
+    padding: 1rem 1rem;
+  }
+
+  .card {
+    width: 40%
+  }
+
+  .cardsection {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu-icon {
+    display: block;
+    margin-top: 1rem;
+  }
+
+  .navbarrightsection {
+    display: none;
+  }
+
+  .navbarleftsection {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbarleftsection img {
+    width: 32%;
+  }
+
+  .navbarrightsectionshow {
+    height: 70%;
+    position: absolute;
+    top: 3rem;
+    left: 1rem;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgb(212, 58, 255);
+    border-radius: .5rem;
+    z-index: 1;
+  }
+
+  .navbarrightsectionshow a {
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2rem;
+    padding: 0rem 2rem;
+    color: white;
+  }
+
+  .navbarrightsectionshow img {
+    margin-right: .5rem;
+
+  }
+
+  .loginsection {
+    height: 50rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .loginleftsection {
+    height: 50%;
+    width: 90%;
+  }
+
+  .loginrightsection {
+    width: 90%;
+  }
+
+  .cardsection {
+    flex-direction: column;
+  }
+
+  .homecard {
+    width: 90%;
+  }
+
+  .digitalsolution {
+    height: 35rem;
+  }
+
+  .videoicon {
+    width: 90%;
+    text-align: center;
+  }
+
+  .digitalsolution button {
+    height: 6%;
+    width: 48%;
+  }
+
+
+}
+
+@media screen and (max-width: 1000px) and (min-width: 800px) {
+  .headbodyConatiner {
+    width: 74%;
+  }
+
+
+  .navbarleftsection img {
+    width: 34%;
+  }
+
+  .navbarrightsection a {
+    font-size: 1rem;
+    padding: 0rem 1rem;
+  }
+
+  .headleftsection {
+    height: 50%;
+    width: 100%;
+  }
+
+  .headRightsection {
+    height: 50%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .headleftsectionspan1 {
+    font-size: 2.5rem;
+  }
+
+  .headRightsection img {
+    height: 77%;
+    width: 95%;
+    opacity: .8;
+  }
+
+
+
+  .quotespara {
+    width: 90%;
+    padding: 1rem 1rem;
+  }
+
+  .card {
+    height: 17rem;
+    width: 30%
+  }
+
+  .cardsection {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .loginleftsection img {
+    height: 90%;
+    width: 93%;
+}
+
+.loginrightsection {
+  width: 40%;
+}
+
+.digitalsolution {
+  height: 26rem;
+}
+
+.homecard{
+  width: 30%;
+}
 }
